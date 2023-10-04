@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: postgresql:13.10
+        image: postgres:13.10
         env:
           POSTGRES-USER: django_user
           POSTGRES_PASSWORD: django_password
