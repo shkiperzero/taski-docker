@@ -15,14 +15,14 @@ services:
     image: shkiperzero/taski_backend
     env_file: .env
     volumes:
-      - static_volume:/backend_static
+      - static_volume:/backend_static/
 
   frontend:
     image: shkiperzero/taski_frontend
     env_file: .env
     command: cp -r /app/build/. /frontend_static/
     volumes:
-      - static_volume:/frontend_static
+      - static_volume:/frontend_static/
 
   gateway:
     image: shkiperzero/taski_gateway
